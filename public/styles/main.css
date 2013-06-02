@@ -1,0 +1,167 @@
+/******************************
+* Definitions
+*******************************/
+/******************************
+* Functions
+*******************************/
+/******************************
+* Base
+*******************************/
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  line-height: 1;
+  font-weight: 300;
+}
+h1 {
+  font-size: 175%;
+}
+h2 {
+  font-size: 118.75%;
+}
+a {
+  color: #3d85c7;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #0b5394;
+  text-decoration: none;
+}
+li {
+  line-height: 1.2;
+}
+p {
+  margin-bottom: 1.5em;
+}
+strong {
+  color: #0b5394;
+  font-weight: 400;
+}
+label,
+input[type=text],
+input[type=email],
+button,
+select,
+textarea {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 75%;
+  line-height: 2.2em;
+  border: solid 2px #dcdcdc;
+  padding-left: 1em;
+  margin: 0 0 1.5em 0;
+}
+section {
+  padding: 7% 0;
+  overflow: auto;
+}
+hr {
+  border: solid #dcdcdc;
+  border-width: 0 0 1px 0;
+  margin-bottom: 4%;
+  padding-bottom: 5%;
+}
+/******************************
+* Modules
+*******************************/
+.content {
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 0 2em;
+  box-sizing: content-box;
+}
+.content-narrow {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 2em;
+  box-sizing: content-box;
+}
+.content-full {
+  padding: 0 2em;
+}
+.vert {
+  display: inline-block;
+  vertical-align: middle;
+}
+.center-spaced {
+  overflow: auto;
+  text-align: center;
+}
+.center-spaced> * {
+  display: inline-block;
+  margin-right: 10%;
+}
+.center-spaced> *:last-child {
+  margin-right: 0;
+}
+.big-announce {
+  font-size: 156%;
+  line-height: 1.5;
+}
+.announce {
+  font-size: 140%;
+  line-height: 1.5;
+}
+.logo1 {
+  color: #000;
+}
+.logo2 {
+  color: #0b5394;
+}
+.logo3 {
+  color: #3d85c7;
+}
+.page-title {
+  font-size: 300%;
+}
+.page-subtitle {
+  font-size: 112.5%;
+}
+.theme1 {
+  background-color: #f4f4f4;
+}
+.theme-dark {
+  color: #fff;
+  background-color: #262626;
+}
+.theme-dark a {
+  color: #7cbcf5;
+}
+.border-bottom {
+  border-bottom: solid 5px #808080;
+}
+.button {
+  border: 0;
+  background-color: #3d85c7;
+  font-size: 81.25%;
+  color: #fff;
+  padding: 1em 3em;
+}
+.button:hover {
+  background-color: #0b5394;
+  color: #fff;
+}
+.page-footer {
+  padding: 2% 0;
+}
+/******************************
+* Page-Specific
+*******************************/

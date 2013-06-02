@@ -1,0 +1,25 @@
+!!! 5
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8" lang="en">
+//if IE 8
+  <html class="no-js lt-ie9" lang="en">
+<!--[if gt IE 8]><!-->
+html(class='no-js', lang='en')
+  <!--<![endif]-->
+
+  head
+    title {B} Coder - Learn Coding for the Benefit of Humankind
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/components/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+    link(rel='stylesheet', href='/styles/main.css')
+
+  body
+    block body
+    
+    include analytics.html
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    script(src="/components/bootstrap/js/bootstrap.min.js")

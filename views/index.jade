@@ -1,0 +1,45 @@
+extend layout
+block body
+
+  section
+    heading
+      .content
+        header
+          .page-title
+            mixin logo
+          .page-subtitle Learn coding for the benefit of humankind.
+
+  section.theme1
+    .content
+      p
+        | B Coder provides coding instruction for individuals who see the potential in technology for creating massive 
+        | social impact. Our hope in the digital age is not just to see technology advance for its own sake, but to 
+        | improve the world we live in.
+      p
+        | Work directly with B Coder founder and owner, Raine Lourie, in learning the real-world developer skills on
+        | projects that create positive social impact. B Coder has proudly partnered with top digital charity organizations 
+        | where you will be making real-world volunteer contributions as you learn modern web development skills.
+      p
+        | Raine has helped dozens of individuals learn how to code. Now he's making it his mission to help those who have the 
+        | vision to put those coding skills to their highest use.
+      p
+        | Want to make a difference in the world? <strong>Learn to code. Start today</strong>.
+
+  section
+    .content-narrow
+      include mailchimp-short.html
+
+  footer.page-footer.border-bottom
+    .content
+      hr
+    .content-narrow
+      div Raine Lourie
+      a(href='mailto:raine@collegecoding.com') raine@collegecoding.com
+
+mixin logo()
+  span.logo1
+    | {
+  span.logo2
+    | B
+  span.logo3
+    | } Coder
