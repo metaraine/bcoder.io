@@ -1,0 +1,40 @@
+mixin heading-big
+	section
+		heading
+			.content
+				header
+					.page-title
+						+logo
+					.page-subtitle The Human Side of Technology Education
+
+mixin heading-slim
+	section.section-slim
+		heading
+			.content
+				header
+					span.lesserpage-title
+						+logo
+					span.lesserpage-subtitle The Human Side of Technology Education
+
+mixin logo
+	a(href='/')
+		span.logo1
+			| {
+		span.logo2
+			| B
+		span.logo3
+			| } Coder
+
+mixin mailing-list
+	.content-narrow
+		.row
+			.col-xs-6
+				h1 Join our mailing list
+				include mailchimp-short.html
+
+mixin footer
+	footer
+		.content-narrow.text-muted Founded by 
+			a(href='mailto:raine@collegecoding.com') Raine Lourie
+			| , lover of people and technology, in that order.
+			

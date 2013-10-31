@@ -18,7 +18,7 @@ mobile-media = "(max-width: %s)" % mobile
 tablet-scale = (tablet/desktop)
 mobile-scale = (mobile/desktop)
 
-basefont = 16px
+basefont = 18px
 
 /******************************
 * Functions
@@ -69,12 +69,19 @@ body
 h1,h2,h3
   line-height 1
   font-weight 300
+  margin-top 2em
+  margin-bottom 0.5em
+  &:first-child
+    margin-top 0
 
 h1
   font-size-scaled 28px
 
 h2
-  font-size-scaled 19px
+  font-size-scaled 22px
+
+h3
+  font-size-scaled 18px
 
 a
   color blue2
@@ -91,14 +98,10 @@ p
   margin-bottom 1.5em
 
 strong
-  color blue1
   font-weight 400
 
-label, input[type=text], input[type=email], button, select, textarea
-  display block
-  width 400px
+input[type=text], input[type=email], button, select, textarea
   max-width 100%
-  height auto
   font-family "Open Sans"
   font-weight 400
   font-size-scaled 12px
@@ -108,7 +111,7 @@ label, input[type=text], input[type=email], button, select, textarea
   margin 0 0 1.5em 0
 
 section
-  padding 7% 0
+  padding 5% 0
   overflow auto
 
 hr
@@ -167,9 +170,17 @@ center-spaced(space = 10%)
 
 .page-title
   font-size-scaled 48px
+  margin-right 20px
 
 .page-subtitle
   font-size-scaled 18px
+
+.lesserpage-title
+  font-size-scaled 28px
+  margin-right 20px
+
+.lesserpage-subtitle
+  font-size-scaled 16px
 
 .theme1
   background-color lightgray
@@ -189,6 +200,7 @@ button()
   font-size-scaled 13px
   color white
   padding 1em 3em
+  text-align center
   &:hover
     background-color blue1
     color white
@@ -196,7 +208,30 @@ button()
 .button
   button()
 
+.button-giant
+  display block
+  font-size-scaled 18px
+
+.lead-more
+  font-weight 400
+  margin-bottom 80px
+
+.subtext
+  background-color white
+  padding 30px 0
+
 .page-footer
+  padding 2% 0
+
+.label-short
+  float left
+  width 46px
+  white-space nowrap
+
+.label-long
+  width 323px
+
+.section-slim
   padding 2% 0
 
 /******************************

@@ -12,10 +12,17 @@ app.use express.bodyParser()
 app.use express.cookieParser()
 app.use express.session(secret: config.sessionSecret)
 app.use express.static(__dirname + '/public')
+app.use express.static(__dirname + '/bower_components')
 
 # controller
 app.get '/', (req, res) ->
   res.render 'index'
+
+app.get '/teach', (req, res) ->
+  res.render 'teach'
+
+app.get '/learn', (req, res) ->
+  res.render 'learn'
 
 # start
 app.listen process.env.PORT, ->

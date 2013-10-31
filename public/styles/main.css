@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -25,12 +25,22 @@ h2,
 h3 {
   line-height: 1;
   font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child {
+  margin-top: 0;
 }
 h1 {
-  font-size: 175%;
+  font-size: 155.556%;
 }
 h2 {
-  font-size: 118.75%;
+  font-size: 122.222%;
+}
+h3 {
+  font-size: 100%;
 }
 a {
   color: #3d85c7;
@@ -48,29 +58,24 @@ p {
   margin-bottom: 1.5em;
 }
 strong {
-  color: #0b5394;
   font-weight: 400;
 }
-label,
 input[type=text],
 input[type=email],
 button,
 select,
 textarea {
-  display: block;
-  width: 400px;
   max-width: 100%;
-  height: auto;
   font-family: "Open Sans";
   font-weight: 400;
-  font-size: 75%;
+  font-size: 66.667%;
   line-height: 2.2em;
   border: solid 2px #dcdcdc;
   padding-left: 1em;
   margin: 0 0 1.5em 0;
 }
 section {
-  padding: 7% 0;
+  padding: 5% 0;
   overflow: auto;
 }
 hr {
@@ -130,10 +135,18 @@ hr {
   color: #3d85c7;
 }
 .page-title {
-  font-size: 300%;
+  font-size: 266.667%;
+  margin-right: 20px;
 }
 .page-subtitle {
-  font-size: 112.5%;
+  font-size: 100%;
+}
+.lesserpage-title {
+  font-size: 155.556%;
+  margin-right: 20px;
+}
+.lesserpage-subtitle {
+  font-size: 88.889%;
 }
 .theme1 {
   background-color: #f4f4f4;
@@ -151,15 +164,39 @@ hr {
 .button {
   border: 0;
   background-color: #3d85c7;
-  font-size: 81.25%;
+  font-size: 72.222%;
   color: #fff;
   padding: 1em 3em;
+  text-align: center;
 }
 .button:hover {
   background-color: #0b5394;
   color: #fff;
 }
+.button-giant {
+  display: block;
+  font-size: 100%;
+}
+.lead-more {
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+.subtext {
+  background-color: #fff;
+  padding: 30px 0;
+}
 .page-footer {
+  padding: 2% 0;
+}
+.label-short {
+  float: left;
+  width: 46px;
+  white-space: nowrap;
+}
+.label-long {
+  width: 323px;
+}
+.section-slim {
   padding: 2% 0;
 }
 /******************************
